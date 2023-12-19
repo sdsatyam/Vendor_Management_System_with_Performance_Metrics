@@ -1,0 +1,26 @@
+<!-- vendor_performance.html -->
+<!DOCTYPE html>
+{% extends 'model/base.html' %}
+{% block body_block%}
+<html>
+<head>
+    <title>{{ vendor.name }} Performance Metrics</title>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container" align='center'>
+    <h1>{{ vendor.name }} Performance Metrics</h1>
+    <ul>
+        <h5>Vendor ID: {{ vendor.vendor_id }}</h5>
+    <p>On-Time Delivery Rate: {{ vendor.on_time_delivery_rate }}</p>
+    <p>Quality Rating: {{ vendor.quality_rating }}</p>
+    <p>Response Time: {{ vendor.response_time }} hours</p>
+    <p>Fulfillment Rate: {{ vendor.fulfillment_rate }}</p>
+    </ul>
+        <a class="btn btn-success" href="/" role="button">Home</a>
+    </div>
+
+</div>
+</body>
+</html>
+{% endblock %}

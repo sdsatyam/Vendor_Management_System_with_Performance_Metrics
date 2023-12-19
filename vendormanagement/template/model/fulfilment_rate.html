@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'model/base.html' %}
+{% block body_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fulfilment Rate</title>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container" align='center'>
+        <h1>Fulfilment Rate</h1>
+        <h2>{{ vendor.name }}</h2>
+        <p>Vendor ID: {{ vendor.vendor_id }}</p>
+        <p>Fulfilment Rate: {{ fulfilment_rate }}%</p>
+        <a class="btn btn-warning" href="/" role="button">Home</a>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'model/base.html' %}
+{% block body_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Rating Average</title>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container" align='center'>
+        <h1>Quality Rating Average</h1>
+        <h2>{{ vendor.name }}</h2>
+        <p>Vendor ID: {{ vendor.vendor_id }}</p>
+        <p>Quality Rating Average: {{ quality_rating_average}}</p>
+        <a class="btn btn-primary" href="/" role="button">Home</a>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics Dashboard</title>
+</head>
+<body>
+    <h1>Metrics Dashboard</h1>
+    <ul>
+            <li><a href="/vendorapp/on_time_delivery_rate/{{ vendor.id }}/">On-Time Delivery Rate - {{ vendor.name }}</a></li>
+
+
+        {% for vendor in vendors %}
+    {% if vendor.id %}
+        <li><a href="{% url 'on_time_delivery_rate' vendor_id=vendor.id %}">On-Time Delivery Rate - {{ vendor.name }}</a></li>
+    {% else %}
+        <li>Vendor ID not available for {{ vendor.name }}</li>
+    {% endif %}
+{% endfor %}
+
+
+
+    </ul>
+</body>
+</html>

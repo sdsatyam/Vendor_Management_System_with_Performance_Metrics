@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'model/base.html' %}
+{% block body_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Time Delivery Rate</title>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container" align='center'>
+    <h1>On-Time Delivery Rate</h1>
+        <h2>{{ vendor.name }}</h2>
+    <p>Vendor ID: {{ vendor.vendor_id }}</p>
+    <p>On-Time Delivery Rate: {{ on_time_delivery_rate}}</p>
+        <a class="btn btn-info" href="/" role="button">Home</a>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
+

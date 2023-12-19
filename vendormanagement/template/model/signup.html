@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'model/base.html'%}
+{% block body_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup page</title>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container" align="">
+        <h1>Please Signup To Write Exams......</h1>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" name="" value="SignUp">
+        </form>
+    </div>
+</div>
+{% endblock%}
+
+</body>
+</html>
